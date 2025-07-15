@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar-EG" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولّد صور بالذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مولّد صور بالذكاء الاصطناعي</h1>
+        <p>ارفع صورة واكتب اللي عايز تعمله فيها، وبعدين دوس على زر إنشاء.</p>
+        <div class="input-section">
+            <input type="file" id="imageInput" accept="image/*" />
+            <input type="text" id="promptInput" placeholder="اكتب إيه اللي عايز تعمله في الصورة...">
+            <button onclick="generateImage()">إنشاء الصورة</button>
+        </div>
+        <div id="loading" class="loading">بتحمل دلوقتي...</div>
+        <div id="error" class="error"></div>
+        <div id="imageContainer" class="image-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
